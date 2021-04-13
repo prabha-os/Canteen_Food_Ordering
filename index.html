@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Canteen Food Ordering</title>
+	<meta name="viewport" content="width=device-width,intial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+			var show = document.getElementByID("nav-links");
+			function showMenu(){
+				show.style.right = "0";
+			}
+			function closeMenu(){
+				show.style.right = "-200px";
+			}
+		</script>
+
+</head>
+<body>
+	<div class="header">
+		<div class="nav-bar">
+			<div class="nav-logo">
+				<img src="logo.png">
+			</div>
+			<div class="nav-links" id="nav-links">
+				<i class="fa fa-close" onclick="closeMenu()"></i>
+				<ul>
+					<a href="#"><li>HOME</li></a>
+					<a href="#"><li>MENU</li></a>
+					<a href="#"><li>CONTACT</li></a>
+				</ul>
+				<button type="button" class="btn">SIGN IN</button> 
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+	</div>
+	<div class="intro">
+		<h1><span>NIT RAIPUR Canteen.<br></span> Delicious Delights</h1>
+	</div>
+	<div class="vertical-bar">
+		<div class="search-icon">
+			<i class="fa fa-th-list"></i></div>
+			<i class="fas fa-search"></i>
+		<div class="social-icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-twitter"></i>
+		</div>
+		
+</body>
+</html>
